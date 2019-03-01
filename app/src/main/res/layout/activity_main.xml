@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:elevation="2dp"
+        android:background="@drawable/toolbar_design"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/AppTheme">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="17sp"
+            android:text="Search contacts &amp; places"/>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="70dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_dialpad_black_24dp"
+        android:tint="@android:color/white"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="#1A73E8"/>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        app:itemIconTint="@drawable/nav_select_color"
+        app:itemTextColor="@drawable/nav_select_color"
+        app:menu="@menu/bottom_nav_menu" />
+</android.support.design.widget.CoordinatorLayout>
