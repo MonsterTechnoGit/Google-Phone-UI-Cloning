@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@android:color/white"
+    android:background="?attr/backgroundColorApp"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -16,12 +16,13 @@
         android:elevation="2dp"
         android:background="@drawable/toolbar_design"
         android:minHeight="?attr/actionBarSize"
-        android:theme="@style/AppTheme">
+        android:theme="?attr/actionBarStyle">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:textSize="17sp"
+            android:textColor="?attr/toolbarTextColor"
             android:text="Search contacts &amp; places"/>
     </android.support.v7.widget.Toolbar>
 
@@ -42,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="@android:color/white"
+        android:background="?attr/backgroundColorApp"
         app:itemIconTint="@drawable/nav_select_color"
         app:itemTextColor="@drawable/nav_select_color"
         app:menu="@menu/bottom_nav_menu" />

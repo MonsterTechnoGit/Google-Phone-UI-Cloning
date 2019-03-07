@@ -6,5 +6,5 @@
         android:color="#1A73E8"/>
     <item
         android:state_checked="false"
-        android:color="#5F6368"/>
+        android:color="?attr/bottomNavIconColor"/>
 </selector>
